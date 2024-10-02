@@ -12,6 +12,6 @@ namespace Hazel
 
     void Application::Run()
     {
-        while(true);
+        // while(true); //was giving error if uncommented - trace trap  ./Sandbox/src/Sandbox
     }
 }
