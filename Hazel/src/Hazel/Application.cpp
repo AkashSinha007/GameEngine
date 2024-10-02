@@ -1,5 +1,4 @@
 #include "Application.h"
-#include <stdio.h>
 
 namespace Hazel 
 {
@@ -13,9 +12,6 @@ namespace Hazel
 
     void Application::Run()
     {
-        while(true)
-        {
-            printf("\nHello 1");
-        }
+        while(true);
     }
 }
