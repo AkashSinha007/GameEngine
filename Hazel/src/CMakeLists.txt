@@ -17,9 +17,18 @@ add_library(${LIBRARY_NAME} SHARED
             #pre-compiled header
             hzpch.h
             hzpch.cpp
+
+            #Windows and Platform
+            Hazel/Window.h 
+            Platform/Mac/MacWindow.h
+            Platform/Mac/MacWindow.cpp
             )
 
 target_link_libraries(${LIBRARY_NAME} PUBLIC 
                         spdlog::spdlog
+                        glfw
+                        glad
+                        ${OPENGL_LIBRARY} # filled by "find_package(OpenGL REQUIRED)"
                     )
-target_include_directories(${LIBRARY_NAME} PUBLIC "./")
+target_include_directories(${LIBRARY_NAME} PUBLIC "./" 
+                            ${glfw_SOURCE_DIR}/include/)
