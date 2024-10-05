@@ -13,6 +13,10 @@ add_library(${LIBRARY_NAME} SHARED
             Hazel/Events/MouseEvent.h
             Hazel/Events/KeyEvent.h
             Hazel/Events/ApplicationEvent.h
+
+            #pre-compiled header
+            hzpch.h
+            hzpch.cpp
             )
 
 target_link_libraries(${LIBRARY_NAME} PUBLIC 
