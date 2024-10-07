@@ -22,6 +22,12 @@ add_library(${LIBRARY_NAME} SHARED
             Hazel/Window.h 
             Platform/Mac/MacWindow.h
             Platform/Mac/MacWindow.cpp
+
+            #Layers
+            Hazel/Layer.h
+            Hazel/Layer.cpp 
+            Hazel/LayerStack.h 
+            Hazel/LayerStack.cpp
             )
 
 target_link_libraries(${LIBRARY_NAME} PUBLIC 
